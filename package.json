@@ -1,0 +1,27 @@
+{
+  "name": "martion-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --ui exports --reporter spec",
+    "monitor": "./node_modules/.bin/mocha --ui exports --reporter min --watch",
+    "debugtest": "./node_modules/.bin/mocha --debug-brk --ui exports --reporter spec",
+    "coverage": "./node_modules/.bin/mocha -r jscoverage --covignore .covignore --covout html --covinject true --coverage 90,85,75 test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mikeljames/martian-robot.git"
+  },
+  "author": "mjames",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeljames/martian-robot/issues"
+  },
+  "homepage": "https://github.com/mikeljames/martian-robot#readme",
+  "devDependencies": {
+    "jscoverage": "^0.6.0",
+    "mocha": "^2.2.5",
+    "chai": "^3.2.0"
+  }
+}
